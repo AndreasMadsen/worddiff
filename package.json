@@ -1,0 +1,27 @@
+{
+  "name": "worddiff",
+  "description": "Counts the number of unordered word diffrences in two strings",
+  "version": "0.2.0",
+  "author": "Andreas Madsen <amwebdk@gmail.com>",
+  "main": "./worddiff.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/AndreasMadsen/endpoint.git"
+  },
+  "keywords": [
+    "words",
+    "diffrences",
+    "string match"
+  ],
+  "devDependencies": {
+    "tap": "0.4.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "0.10 || 0.9",
+    "npm": "1"
+  }
+}
