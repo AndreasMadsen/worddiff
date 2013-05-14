@@ -13,8 +13,6 @@ function worddiff(a, b) {
   a = split(a);
   b = split(b);
   
-  console.log(a, b);
-  
   // Remove items there match from both a and b
   var i = 0;
   while (i < b.length && a.length > 0) {
