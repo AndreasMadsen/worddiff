@@ -1,7 +1,9 @@
 
 var SPACE = /\s+/;
 
-function split(s) {
+function transform(s) {
+  if (Array.isArray(s)) return s.slice(0);
+
   s = s.split(SPACE);
   if (s[0] === '') s = s.slice(1);
   if (s[s.length - 1] === '') s = s.slice(0, -1);
@@ -10,9 +12,9 @@ function split(s) {
 }
 
 function worddiff(a, b) {
-  a = split(a);
-  b = split(b);
-  
+  a = transform(a);
+  b = transform(b);
+
   // Remove items there match from both a and b
   var i = 0;
   while (i < b.length && a.length > 0) {

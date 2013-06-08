@@ -37,3 +37,9 @@ test('extra space do not matter', function (t) {
   t.equal(diff, 0);
   t.end();
 });
+
+test('word arrays works too', function (t) {
+  var diff = worddiff(['hallo', 'world'], ['hallo', 'world']);
+  t.equal(diff, 0);
+  t.end();
+});

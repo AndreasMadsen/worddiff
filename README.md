@@ -14,6 +14,7 @@ npm install wordiff
   var worddiff = require('worddiff');
   
   // 'with' !== 'in' so there are two mismatched words
+  // NOTE: the arguments can also be array of words
   worddiff('string   with \n words', 'words in string'); // 2
 ```
 
